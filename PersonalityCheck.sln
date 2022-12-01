@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.API", "Per
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.BLL", "PersonalityCheck.BLL\PersonalityCheck.BLL.csproj", "{BE124668-FBF3-439D-A6D1-E13DCD59FF31}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheckDAL.API", "..\PersonalityCheckDAL.API\PersonalityCheckDAL.API.csproj", "{4D55FE4F-1301-4C87-8DD2-F34E3BDBAAF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheckDAL.API", "PersonalityCheckDAL.API\PersonalityCheckDAL.API.csproj", "{4D55FE4F-1301-4C87-8DD2-F34E3BDBAAF1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.Gateway", "..\PersonalityCheck.Gateway\PersonalityCheck.Gateway.csproj", "{AADB1D2F-F9FE-47EB-ADC6-4F9ECDA3716D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.Gateway", "PersonalityCheck.Gateway\PersonalityCheck.Gateway.csproj", "{AADB1D2F-F9FE-47EB-ADC6-4F9ECDA3716D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
