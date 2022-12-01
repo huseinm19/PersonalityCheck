@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.API", "..\PersonalityCheck.API\PersonalityCheck.API.csproj", "{83AB1CBE-CD95-49BF-86D0-5C427EBE1EFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.API", "PersonalityCheck.API\PersonalityCheck.API.csproj", "{83AB1CBE-CD95-49BF-86D0-5C427EBE1EFB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalityCheck.BLL", "PersonalityCheck.BLL\PersonalityCheck.BLL.csproj", "{BE124668-FBF3-439D-A6D1-E13DCD59FF31}"
 EndProject
