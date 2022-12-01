@@ -1,0 +1,96 @@
+INSERT INTO public."Questions"(
+	"Description")
+	VALUES ('You’re really busy at work and a colleague is telling you their life story and personal woes.');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (1, 1, 'Think it’s more important to give them some of your time; work can wait');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.75, 1, 'Interrupt and explain that you are really busy at the moment');
+
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.55, 1, 'Listen, but with only with half an ear');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.25, 1, 'Don’t dare to interrupt them');
+	
+	
+
+
+INSERT INTO public."Questions"(
+	"Description")
+	VALUES ('You’ve been sitting in the doctor’s waiting room for more than 25 minutes.');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (1, 2, 'Bubble with inner anger, but keep quiet');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.75, 2, 'Explain to other equally impatient people in the room that the doctor is always running late');
+
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.50, 2, 'Look at your watch every two minutes');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.25, 2, 'Complain in a loud voice, while tapping your foot impatiently');
+	
+
+
+
+INSERT INTO public."Questions"(
+	"Description")
+	VALUES ('You are taking part in a guided tour of a museum.');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (1, 3, 'Are right up the front, adding your own comments in a loud voice');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.75, 3, 'Follow the group without question');
+
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.50, 3, 'Make sure that everyone is able to hear properly');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.25, 3, 'Are a bit too far towards the back so don’t really hear what the guide is saying');
+	
+	
+
+
+
+INSERT INTO public."Questions"(
+	"Description")
+	VALUES ('During dinner parties at your home, you have a hard time with people who:');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (1, 4, 'Talk privately between themselves');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.75, 4, 'Hang around you all evening');
+
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.50, 4, 'Ask you to tell a story in front of everyone else');
+	
+INSERT INTO public."Answers"(
+	"Value", "QuestionId", "Description")
+	VALUES (0.25, 4, 'Always drag the conversation back to themselves');
+	
+	
+	
+	
+
+
+
