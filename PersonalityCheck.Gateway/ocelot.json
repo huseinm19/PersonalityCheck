@@ -1,0 +1,19 @@
+﻿{
+  "GlobalConfiguration": {
+    
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/GetQuestionsAndAnswers",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/PersonalityCheck/GetQuestionsAndAnswers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7056
+        }
+      ]
+    }
+  ]
+}
