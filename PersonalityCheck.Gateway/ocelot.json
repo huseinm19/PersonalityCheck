@@ -14,6 +14,18 @@
           "Port": 7056
         }
       ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/SaveResult",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/PersonalityCheck/SaveResult",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7056
+        }
+      ]
     }
   ]
 }

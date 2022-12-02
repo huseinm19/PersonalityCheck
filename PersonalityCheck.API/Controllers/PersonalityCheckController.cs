@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PersonalityCheck.BLL.Interface;
+using PersonalityCheck.BLL.Models;
 
 namespace PersonalityCheck.API.Controllers
 {
@@ -24,6 +25,23 @@ namespace PersonalityCheck.API.Controllers
             try
             {
                 var response = await _personalityCheckService.GetAllQuestionsAndAnswers(email);
+
+                return (ActionResult)new OkObjectResult(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Unable to get states from DB");
+            }
+        }
+
+        [HttpPost("SaveResult")]
+        public async Task<IActionResult> SaveResult(User user)
+        {
+            try
+            {
+                var response = await _personalityCheckService.SaveResult(user);
 
                 return (ActionResult)new OkObjectResult(response);
             }

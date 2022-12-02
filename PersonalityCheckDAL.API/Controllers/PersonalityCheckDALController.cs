@@ -67,23 +67,7 @@ namespace PersonalityCheckDAL.API.Controllers
             }
         }
 
-        [HttpGet("GetUser")]
-        public async Task<IActionResult> GetUserByEmail(string email)
-        {
-            try
-            {
-                var response = await _userRepository.FindByConditionAsync(user => user.Email == email);
-
-                return (ActionResult)new OkObjectResult(response);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Unable to get users from DB");
-            }
-        }
-
-        [HttpPost("AddState")]
+        [HttpPost("AddNewUser")]
         public async Task<IActionResult> AddNewUser([FromBody] User user)
         {
             try

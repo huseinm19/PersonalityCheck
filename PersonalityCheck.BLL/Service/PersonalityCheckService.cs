@@ -40,5 +40,19 @@ namespace PersonalityCheck.BLL.Service
             }
 
         }
+        public async Task<Response<bool>> SaveResult(User user)
+        {
+            try
+            {              
+                bool response = await _httpClientService.AddNewUser(user);
+                return Response<bool>.Successful(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Something went wrong with adding result. Exception: {ex}");
+                return Response<bool>.Failed("Internal server error"); ;
+            }
+
+        }
     }
 }

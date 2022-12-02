@@ -33,6 +33,18 @@ namespace PersonalityCheck.BLL.Service
                 throw;
             }
         }
+        public async Task<bool> AddNewUser(User user)
+        {
+            try
+            {
+                return (await Post<bool>("api/PersonalityCheckDAL/AddNewUser", user)).Data;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
 
     }
 }

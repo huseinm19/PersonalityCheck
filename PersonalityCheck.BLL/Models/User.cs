@@ -3,9 +3,7 @@
     public class User
     {
         public int Id { get; set; }
-        public string Email { get; set; }
-        public int NumberOfAnsweredQuestions { get; set; }
-        public int Result { get; set; }
-        public bool Retaken { get; set; }
+        public string FullName { get; set; }
+        public string ResultPercentage { get; set; }
     }
 }

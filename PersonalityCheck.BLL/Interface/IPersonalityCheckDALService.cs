@@ -11,5 +11,6 @@ namespace PersonalityCheck.BLL.Interface
     {
         Task<List<Question>> GetAllQuestions();
         Task<List<Answer>> GetAllAnswers();
+        Task<bool> AddNewUser(User user);
     }
 }
