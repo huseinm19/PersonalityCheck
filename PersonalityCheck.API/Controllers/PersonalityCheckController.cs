@@ -20,11 +20,11 @@ namespace PersonalityCheck.API.Controllers
         }
 
         [HttpGet("GetQuestionsAndAnswers")]
-        public async Task<IActionResult> GetQuestionsAndAnswers(string email)
+        public async Task<IActionResult> GetQuestionsAndAnswers()
         {
             try
             {
-                var response = await _personalityCheckService.GetAllQuestionsAndAnswers(email);
+                var response = await _personalityCheckService.GetAllQuestionsAndAnswers();
 
                 return (ActionResult)new OkObjectResult(response);
             }

@@ -18,12 +18,16 @@ namespace PersonalityCheck.BLL.Service
             _logger = logger;
         }
 
-        public async Task<Response<List<QuestionAndAnswersDto>>> GetAllQuestionsAndAnswers(string email)
+        public async Task<Response<List<QuestionAndAnswersDto>>> GetAllQuestionsAndAnswers()
         {
             try
             {
                 List<Question> questions = await _httpClientService.GetAllQuestions();
+                if (questions == null)
+                    return Response<List<QuestionAndAnswersDto>>.Failed("There is no questions in database");
                 List<Answer> answers = await _httpClientService.GetAllAnswers();
+                if (answers == null)
+                    return Response<List<QuestionAndAnswersDto>>.Failed("There is no answers in database");
                 List<QuestionAndAnswersDto> questionAndAnswersDto = new List<QuestionAndAnswersDto>();                
                 foreach (var question in questions)
                 {
@@ -36,7 +40,7 @@ namespace PersonalityCheck.BLL.Service
             catch (Exception ex)
             {
                 _logger.LogInformation($"Something went wrong with getting questions and answers. Exception: {ex}");
-                return Response<List<QuestionAndAnswersDto>>.Failed("Internal server error"); ;
+                return Response<List<QuestionAndAnswersDto>>.Failed("Internal server error");
             }
 
         }
@@ -45,12 +49,15 @@ namespace PersonalityCheck.BLL.Service
             try
             {              
                 bool response = await _httpClientService.AddNewUser(user);
+                if (!response)
+                    return Response<bool>.Failed("User can't be saved in database.");
+
                 return Response<bool>.Successful(response);
             }
             catch (Exception ex)
             {
                 _logger.LogInformation($"Something went wrong with adding result. Exception: {ex}");
-                return Response<bool>.Failed("Internal server error"); ;
+                return Response<bool>.Failed("Internal server error");
             }
 
         }
