@@ -10,7 +10,7 @@ export class QuestionService {
   url:string = "https://localhost:7011/api/"
 
   getQuestionJson(){
-    return this.http.get<any>(this.url + "GetQuestionsAndAnswers" + '?email=huseinm10@hotmail.com');
+    return this.http.get<any>(this.url + "GetQuestionsAndAnswers");
   }
 
   saveResult(user: User){
